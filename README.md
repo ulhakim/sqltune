@@ -280,6 +280,9 @@ WHERE ((JobCategories.name LIKE '%name22%'
         OR Jobs.salary_range_remarks LIKE '%name22%'
         OR Jobs.restriction LIKE '%name22%'
         OR Jobs.remarks LIKE '%name22%'
+        
+       /* if left join is succeed , it will return job_id with value */        
+        
         OR JobsTools.job_id IS NOT NULL
         OR JobsCareerPaths.job_id IS NOT NULL
         OR JobsRecQualifications.job_id IS NOT NULL
